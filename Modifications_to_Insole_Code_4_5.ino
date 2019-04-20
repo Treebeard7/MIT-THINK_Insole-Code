@@ -97,39 +97,41 @@ void loop() {
 }
 
 void testSensation () {
-  Serial.println("Initiating Pulse Mechanism");
+  Serial.println("Initiating Pulse Mechanism. 1 sec. on, 1 sec. off");
   delay(500);
   Serial.println();
   delay (3000);
+  
   digitalWrite(motordisk, HIGH);
   Serial.println("ON");
-  delay(500);
-  Serial.println();
   delay(1000);
-  Serial.println("OFF");
-  delay(500);
   Serial.println();
+  
   digitalWrite(motordisk, LOW);
-  Serial.println("ON");
-  delay(500);
-  Serial.println();
-  delay(1000);
   Serial.println("OFF");
-  delay(500);
+  delay(1000);
   Serial.println();
+
   digitalWrite(motordisk, HIGH);
   Serial.println("ON");
-  delay(500);
-  Serial.println();
   delay(1000);
-  Serial.println("OFF");
-  delay(500);
   Serial.println();
+
   digitalWrite(motordisk, LOW);
-  Serial.println("ON");
-  delay(500);
-  Serial.println();
+  Serial.println("OFF");
   delay(1000);
+  Serial.println();
+
+   digitalWrite(motordisk, HIGH);
+  Serial.println("ON");
+  delay(1000);
+  Serial.println();
+
+  digitalWrite(motordisk, LOW);
+  Serial.println("OFF");
+  delay(1000);
+  Serial.println();
+  
   Serial.println("Pulse Mechanism Complete");
   Serial.flush();
   
